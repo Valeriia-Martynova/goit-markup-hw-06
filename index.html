@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="webstudio" content="effective solutions for your business" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webstudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,19 +22,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--header-tablet-desktop-->
     <header class="top-line">
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo"
             >Web<span class="logo-color">Studio</span></a
           >
-          <ul class="navigation">
-            <li>
-              <a class="link-main-page current" href="./index.html">Studio</a>
-            </li>
-            <li><a href="" class="link-main-page">Portfolio</a></li>
-            <li><a href="" class="link-main-page">Contacts</a></li>
-          </ul>
+          <div class="nav-desktop">
+            <ul class="navigation">
+              <li>
+                <a class="link-main-page current" href="./index.html">Studio</a>
+              </li>
+              <li><a href="" class="link-main-page">Portfolio</a></li>
+              <li><a href="" class="link-main-page">Contacts</a></li>
+            </ul>
+          </div>
         </nav>
         <address class="address">
           <ul class="address-row">
@@ -49,6 +53,11 @@
             </li>
           </ul>
         </address>
+        <button class="btn-menu" type="button">
+          <svg class="mobile-icon-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -563,6 +572,8 @@
         </div>
       </div>
     </footer>
+
+    <!--model-window-->
     <div class="modal-overlay">
       <div class="modal">
         <button class="btn-close" type="button">
@@ -649,6 +660,85 @@
           </div>
           <button class="btn-form" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!--mobile-menu-->
+    <div class="mobile-menu-overlay">
+      <div class="modal-mobile">
+        <button class="btn-close-mobile" type="button">
+          <svg class="icon-close-mobile" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="nav-mobile">
+          <ul class="navigation-mobile">
+            <li>
+              <a class="link-menu-mobile" href="./index.html">Studio</a>
+            </li>
+            <li><a href="" class="link-menu-mobile">Portfolio</a></li>
+            <li><a href="" class="link-menu-mobile">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="contacts-mobile">
+            <li class="contacts-item">
+              <a href="tel:+110001111111" class="link-contacts"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="link-contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="icon-social-mobile">
+          <li class="icon-link">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="link-social"
+            >
+              <svg class="icon-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-link">
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              class="link-social"
+            >
+              <svg class="icon-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-link">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="link-social"
+            >
+              <svg class="icon-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-link">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="link-social"
+            >
+              <svg class="icon-social" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
